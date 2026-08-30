@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rahna's Perfume</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      background: #f8f3ed;
+      color: #171513;
+    }
+
+    nav {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 7%;
+      background: #f8f3ed;
+      border-bottom: 1px solid #e5ddd3;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #171513;
+      font-size: 14px;
+    }
+
+    .bag {
+      border: 1px solid #171513;
+      padding: 9px 14px;
+      text-decoration: none;
+      color: #171513;
+      font-size: 13px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero p {
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 8vw, 85px);
+      font-weight: normal;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .hero-text {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      max-width: 500px;
+      margin: 0 auto 30px;
+    }
+
+    .shop-button {
+      display: inline-block;
+      background: #171513;
+      color: white;
+      text-decoration: none;
+      padding: 15px 28px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .collection {
+      padding: 80px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 38px;
+      font-weight: normal;
+      margin-bottom: 50px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: #fffaf5;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-image {
+      height: 300px;
+      background: #eee5da;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      color: #777;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .product h3 {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .about {
+      padding: 90px 7%;
+      text-align: center;
+      background: #eee5da;
+    }
+
+    .about h2 {
+      font-size: 40px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.8;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        display: none;
+      }
+
+      nav {
+        padding: 0 5%;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+
+      .collection {
+        padding: 60px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">RAHNA'S PERFUME</div>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <a href="#" class="bag">Bag (0)</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <p>Rahna's Perfume</p>
+
+      <h1>Find the scent they remember.</h1>
+
+      <div class="hero-text">
+        Discover fragrances chosen to become unforgettable.
+        Elegant scents for moments worth remembering.
+      </div>
+
+      <a href="#collection" class="shop-button">
+        SHOP THE COLLECTION
+      </a>
+
+    </div>
+  </section>
+
+  <section class="collection" id="collection">
+
+    <h2 class="section-title">The Collection</h2>
+
+    <div class="products">
+
+      <div class="product">
+        <div class="product-image">
+          PERFUME IMAGE
+        </div>
+        <h3>Fragrance One</h3>
+        <div class="price">₦45,000</div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          PERFUME IMAGE
+        </div>
+        <h3>Fragrance Two</h3>
+        <div class="price">₦50,000</div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          PERFUME IMAGE
+        </div>
+        <h3>Fragrance Three</h3>
+        <div class="price">₦55,000</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+
+    <h2>About Rahna's</h2>
+
+    <p>
+      Rahna's Perfume is a luxury fragrance destination created
+      for people who believe a scent can become a memory.
+      Every fragrance is selected to leave an impression.
+    </p>
+
+  </section>
+
+  <footer>
+    © 2026 Rahna's Perfume. All rights reserved.
+  </footer>
+
+</body>
+</html>
