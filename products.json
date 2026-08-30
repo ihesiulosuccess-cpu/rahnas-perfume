@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Example Perfume",
+    "category": "Perfumes",
+    "price": 45000,
+    "stock": 5,
+    "image": "",
+    "description": "Luxury fragrance."
+  },
+  {
+    "id": 2,
+    "name": "Example Body Mist",
+    "category": "Body Mists",
+    "price": 25000,
+    "stock": 10,
+    "image": "",
+    "description": "A beautiful refreshing body mist."
+  },
+  {
+    "id": 3,
+    "name": "Example Body Spray",
+    "category": "Body Sprays",
+    "price": 20000,
+    "stock": 8,
+    "image": "",
+    "description": "A fragrant everyday body spray."
+  }
+]
