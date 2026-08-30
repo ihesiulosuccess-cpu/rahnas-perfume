@@ -275,7 +275,31 @@
     </p>
 
   </section>
+<script>
+  let bagCount = 0;
 
+  const bag = document.querySelector(".bag");
+
+  document.querySelectorAll(".product").forEach(product => {
+    const button = document.createElement("button");
+
+    button.textContent = "ADD TO BAG";
+
+    button.style.marginTop = "15px";
+    button.style.padding = "12px 20px";
+    button.style.background = "#171513";
+    button.style.color = "white";
+    button.style.border = "none";
+    button.style.cursor = "pointer";
+
+    button.addEventListener("click", () => {
+      bagCount++;
+      bag.textContent = `Bag (${bagCount})`;
+    });
+
+    product.appendChild(button);
+  });
+</script>
   <footer>
     © 2026 Rahna's Perfume. All rights reserved.
   </footer>
